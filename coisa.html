@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+            grid-template-rows: repeat(2, 1fr); /* Duas linhas */
+            height: 100vh;
+        }
+        .categoria {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: #f4c51c;
+        }
+        .categoria:hover {
+            background-color: #f4f48d;
+        }
+    </style>
+</head>
+<body>
+    <div class="categoria" onclick="location.href='https://link-categoria1.com';">
+        <h2>COMPOSIÇÃO</h2>
+    </div>
+    <div class="categoria" onclick="location.href='https://link-categoria2.com';">
+        <h2>MATERIAL</h2>
+    </div>
+    <div class="categoria" onclick="location.href='https://link-categoria3.com';">
+        <h2>OBJETO</h2>
+    </div>
+    <div class="categoria" onclick="location.href='https://link-categoria4.com';">
+        <h2>CONSTRUÇÃO</h2>
+    </div>
+</body>
+</html>
