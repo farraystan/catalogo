@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Exclusão</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .delete-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tem certeza que deseja excluir esta página?</h1>
+    <button class="delete-button" onclick="confirmDelete()">Excluir Página</button>
+
+    <script>
+        function confirmDelete() {
+            const confirmation = confirm("Você realmente deseja excluir esta página?");
+            if (confirmation) {
+                // Redireciona para uma página de confirmação ou outra página
+                window.location.href = "pagina_excluida.html"; // Altere para a página desejada
+            }
+        }
+    </script>
+
+</body>
+</html>
